@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .base {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 100px auto;
+        background-color:rgb(43, 42, 42);
+        width: 200px;
+        height: 280px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .screen{
+        width: 180px;
+        height: 35px;
+        color: white;
+        text-align: right;
+        font-family: 'Handjet', cursive;
+        font-size: 28px;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+        background-color: rgb(135, 158, 95);
+    }
+
+    .buttons{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        
+    }
+
+    button {
+        border-radius: 5px;
+        width: 45px;
+        height: 40px;
+        margin: 2px;
+        color: white;
+        background-color: rgb(88, 87, 87);
+        font-family: 'Source Code Pro', monospace;
+        font-size: x-large;
+    }
+
+    #clear {
+        width: fit-content;
+        color: black;
+    }
+
+</style>
+
+<body>
+    <div class="base">
+        <div class="screen">0</div>
+        <div class="buttons">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn" style="background-color: rgb(44, 27, 20);">/</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn" style="background-color: rgb(44, 27, 20);">x</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn" style="background-color: rgb(44, 27, 20);">-</button>
+            <button class="btn">.</button>
+            <button class="btn">0</button>
+            <button class="btn" style="background-color: orangered;">=</button>
+            <button class="btn" style="background-color: rgb(44, 27, 20);">+</button>     
+        </div>
+        <button class="btn" id="clear" style="background-color: rgb(226, 241, 17); ">CLEAR</button>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
